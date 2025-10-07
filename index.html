@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locket VIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Galaxy background -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <div class="container fade-in">
+    <!-- Login form -->
+    <div class="card" id="login-card">
+      <h2>Đăng nhập</h2>
+      <p class="sub-title">Locket VIP</p>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Tai khoan Locket">
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Mat khau Locket">
+      </div>
+      <button onclick="login()">Đăng nhập</button>
+      <div class="error" id="error"></div>
+    </div>
+
+    <!-- Profile card -->
+    <div class="card" id="profile-card" style="display:none;">
+      <div class="profile">
+        <img id="avatar" src="https://ineqe.com/wp-content/uploads/2022/02/locket_app_icon-1024x1024.png" alt="avatar">
+        <h3 id="username">Người dùng</h3>
+      </div>
+      <button class="pulse" id="upgrade-btn" onclick="upgradeLocketGold()">✨ Lên Locket Gold ngay 🎉</button>
+
+      <!-- QR hiển thị sau khi bấm -->
+      <div id="qr-container"></div>
+
+      <!-- Link tải cấu hình (ẩn mặc định) -->
+      <a id="download-link" class="btn-primary" href="LocketJunn.mobileconfig" style="display:none;" download>
+        📥 Tải về Cấu Hình
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
