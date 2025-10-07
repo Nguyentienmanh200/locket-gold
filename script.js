@@ -60,7 +60,7 @@ async function upgradeLocketGold() {
 
   qrContainer.style.display = "block";
   qrContainer.innerHTML = `
-    <p>Quét QR để thanh toán <b>30.000 VND</b></p>
+    <p>Quét QR để thanh toán <b>40.000 VND</b></p>
     <img src="${qrUrl}" alt="QR Thanh toán">
   `;
 
